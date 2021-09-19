@@ -1,1 +1,1 @@
-This Repository has codes to  Data Structures & Implementations of Algorithams coded in C++ . 
+This Repository has code for  Data Structures & Implementations of Algorithms coded in C++ . 
