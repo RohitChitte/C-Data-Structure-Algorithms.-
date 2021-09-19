@@ -97,5 +97,57 @@ int main(){
 
 // Important Question. 
 // 2D Matrix Search. 
+// speciality of matrix is elements in rows and columns are in increasing oreder
+//like  1 4 7 11
+//      2 5 8 12 
+//      3 6 9 16 
+//      10 13 14 17 
+// so pseudocode is start from top right element 
+// suppose at (r,c)
+// if matrix[r][c]==target 
+// true 
+// if matrix[r][c]> target
+//    c--
+// else 
+//      r++
+// 2 possible starting points from top right or bottom left 
+// because only at these positions we have options to go to grater or smaller numbers. 
 
-
+int32_t main(){
+    int n,m; cin>>n>>m;
+    int target; cin>> target;
+    int mat[n][m];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin>>mat[i][j];
+        }
+    }
+        
+        // going to top right position. 
+        int r=0, c=m-1;
+        bool found = false;
+        while(r<n && c>=0 ){
+            if(mat[r][c]==target){
+                found = true;
+                break;
+            }
+            if (mat[r][c]>target)
+            {
+                c--;
+            }
+            else{
+                r++;
+            }
+            
+        }
+        if(found){
+                cout<<"Element found";
+            }
+        else{
+                cout<<"Element not found.";
+            }
+            return 0;
+      
+}
