@@ -62,10 +62,12 @@ int main(){
     }
 }
 */
+/*
 
 // use getline function to input entire line. eg.  cin.gitline(arr,n) 
 // if getline used in program use .ignore() function as well to clear buffer. 
 // largest word in sentence
+
 int main(){
     int n;
     cin>>n;
@@ -111,3 +113,6 @@ int main(){
       
     return 0;
 }
+
+*/ 
+
