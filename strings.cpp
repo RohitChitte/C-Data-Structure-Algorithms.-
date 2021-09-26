@@ -39,7 +39,7 @@ int main(){
     */
    // another way is using strings. 
     // using cin only will print 1st word only. 
-    // use gitline funtion to input entire line. 
+    // use getline funtion to input entire line. 
     // se behaviour of getline wiht char array(above code) and strings(below code.). 
 /*
    string str;
